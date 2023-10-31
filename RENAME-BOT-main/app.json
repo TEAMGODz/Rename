@@ -1,0 +1,57 @@
+{
+    "name": "𝙶𝙾𝙳𝚣 𝚁𝚎𝚗𝚊𝚖𝚎 𝙱𝚘𝚝",
+    "description": "Telegram File Renamer Bot ",
+    "logo": "https://telegra.ph/Logo-10-31-17",
+    "keywords": ["Renamer Bot", "Mongo DB"],    
+    "repository": "https://t.me/ANiMeXGoDz",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": "29538539"
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org ",
+            "value": "e3141eb87727600cee656cf0cf8007d6"
+        },
+        "WEBHOOK": {
+            "description": "if your server is need web service! value = True else value = False",
+            "value": "False"
+        },
+        "FORCE_SUB": {
+            "description": "Your force sub channel user name without [@] ",
+            "value": "ANiMeXGoDz",
+            "required": false 
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": "6750037730:AAGgXZt_tmjBsS9T8YXxlNXTbIx4HAiE_h4"
+        },
+        "ADMIN": {
+            "description":"Add Your User ID multiple is use space to split"
+        },
+        "LOG_CHANNEL": {
+            "description":"Bot Log Sending Channel (just create a private channel and add bot to admin and take channel id to add this variable) ⚠️ id startswith -100 must",
+            "value": "-1001672927229"
+            "required": false           
+        },
+        "DB_URL": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com",
+            "value": "mongodb+srv://mralone:mralone@teamxds.zpsi9fb.mongodb.net/?retryWrites=true&w=majority"
+        },
+        "DB_NAME":{ 
+            "description":"Your Mongo DB Database Name ",
+            "value": "pyro-botz",
+            "required": false
+        },
+        "START_PIC": {
+            "description": "Your Bot start cmd Pic from @MT_TelegraPH_Bot",
+            "value": "https://telegra.ph/Naruto-8-10-27",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
